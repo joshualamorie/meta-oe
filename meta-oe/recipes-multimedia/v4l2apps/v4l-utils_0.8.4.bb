@@ -8,7 +8,8 @@ DEPENDS = "jpeg"
 # libv4l was absorbed into this, let OE know that
 PROVIDES = "libv4l"
 
-SRC_URI = "git://linuxtv.org/v4l-utils.git;protocol=git"
+SRC_URI = "git://linuxtv.org/v4l-utils.git;protocol=git \
+        file://remove_qv4l2.patch"
 SRCREV = "v4l-utils-${PV}"
 
 S = "${WORKDIR}/git"
